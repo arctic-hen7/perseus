@@ -8,6 +8,9 @@ mod log;
 mod path_prefix;
 mod test;
 
+/// Cookies impl for Request type
+pub mod cookies;
+
 pub(crate) use async_fn_trait::AsyncFnReturn;
 #[cfg(not(target_arch = "wasm32"))]
 pub use cache_res::{cache_fallible_res, cache_res};
